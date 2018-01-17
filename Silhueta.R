@@ -1,5 +1,6 @@
 
 ##Plotar VersÃ£o 2 escala log ###
+
 library(cluster)
 require(cluster)
 require(ggplot2, quietly=T)
