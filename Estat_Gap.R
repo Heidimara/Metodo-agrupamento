@@ -21,8 +21,21 @@ plot(eixox, eixoy)
 
 # Função para a Estatistica Gap #
 
+setwd("C:\\Users\\Computador\\Documents\\Heidi\\Disertação-Mestrado")  # mudar o diretorio
+
+allelesub = load("alleleSub.rda")  # importar o banco de dados
+
+#head(alleleAsub)  # mostrar apenas as seis primeiras linhas da tabela importada
+
+A = alleleAsub
+B = alleleBsub
+
+n=1180
+
+m=10
 
 melhorK=rep(0,m)
+
 
 myf2 = function(x, y, k,  g) {
   par(mfrow=c(1,2))
@@ -49,7 +62,7 @@ for(k in 2:3){
     grupos= kmeans.result$cluster
     estatgap=gap$Tab[,3] 
     melhorK[i]=which.max(estatgap)
-  myf2(eixox, eixoy,paste (i,"-",melhorK[i], estatgap[melhorK[i]d  ], sep = ";"), grupos);   
+  myf2(eixox, eixoy,paste (i,"-",melhorK[i], estatgap[melhorK[i]], sep = ";"), grupos);   
   
 }
   
