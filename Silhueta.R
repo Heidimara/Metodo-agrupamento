@@ -19,7 +19,7 @@ B = alleleBsub
 
 n=1180
 
-m=5
+m=15
 
 melhorK=rep(0,m)
 melhorKG=rep(0,m)
